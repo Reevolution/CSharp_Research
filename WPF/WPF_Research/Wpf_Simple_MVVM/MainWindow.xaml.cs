@@ -15,6 +15,9 @@ using System.Windows.Shapes;
 
 namespace Wpf_Simple_MVVM
 {
+    // GitHub repo.
+    // https://github.com/Reevolution/CSharp_Research
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>

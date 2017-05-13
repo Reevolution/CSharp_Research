@@ -16,6 +16,9 @@ using System.Windows.Shapes;
 
 namespace Wpf_Simple_ListBox_Scroll_MVVM
 {
+    // GitHub repo.
+    // https://github.com/Reevolution/CSharp_Research
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// Simple Example auto scroll list box to down in MVVM pattern.
