@@ -20,12 +20,15 @@ namespace Wpf_Simple_MVVM
 
     /// <summary>
     /// Interaction logic for MainWindow.xaml
+    /// Simple example change source text in MVVM and check textbox.
     /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+
+            DataContext = new MainWindowViewModel();
         }
     }
 }
