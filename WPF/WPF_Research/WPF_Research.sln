@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf_Simple_ListBox_Scroll_M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf_Simple_Command_MVVM", "Wpf_Simple_Command_MVVM\Wpf_Simple_Command_MVVM.csproj", "{179DF0EA-C2C7-44C8-9101-0068FAAD2CD7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf_Simple_ListBox_Filter_MVVM", "Wpf_Simple_ListBox_Filter_MVVM\Wpf_Simple_ListBox_Filter_MVVM.csproj", "{4D0F8DE2-55A7-4459-8A32-E53097B4F3A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{179DF0EA-C2C7-44C8-9101-0068FAAD2CD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{179DF0EA-C2C7-44C8-9101-0068FAAD2CD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{179DF0EA-C2C7-44C8-9101-0068FAAD2CD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D0F8DE2-55A7-4459-8A32-E53097B4F3A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D0F8DE2-55A7-4459-8A32-E53097B4F3A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D0F8DE2-55A7-4459-8A32-E53097B4F3A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D0F8DE2-55A7-4459-8A32-E53097B4F3A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
