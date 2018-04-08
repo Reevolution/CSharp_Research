@@ -12,7 +12,7 @@ namespace BlockingQueue_Research
     {
         static void Main(string[] args)
         {
-            var blockingQueue = new BlockingQueue<int>();
+            BlockingQueue<int> blockingQueue = new BlockingQueue<int>();
 
             Task.Factory.StartNew(() =>
             {
