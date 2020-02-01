@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CallCenterService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/TFrameWorkCallCenterServer/CallCenterService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/TFrameWorkCallCenterServer/CallCenterService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/TFrameWorkCallCenterServer/CallCenterService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/TFrameWork.CallCenter.ServiceLib" />
+      <xsd:import schemaLocation="http://localhost/TFrameWorkCallCenterServer/CallCenterService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/TFrameWork.CallCenter.WCF.Service.Dto" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICallCenterService_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="ICallCenterService_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallCenterService_UpdateState_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateState" />
+  </wsdl:message>
+  <wsdl:message name="ICallCenterService_UpdateState_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallCenterService_GetFreeEmloyee_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFreeEmloyee" />
+  </wsdl:message>
+  <wsdl:message name="ICallCenterService_GetFreeEmloyee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFreeEmloyeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallCenterService_GetEmployes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployes" />
+  </wsdl:message>
+  <wsdl:message name="ICallCenterService_GetEmployes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICallCenterService">
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallCenterService/Login" message="tns:ICallCenterService_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallCenterService/LoginResponse" message="tns:ICallCenterService_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateState">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallCenterService/UpdateState" message="tns:ICallCenterService_UpdateState_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallCenterService/UpdateStateResponse" message="tns:ICallCenterService_UpdateState_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFreeEmloyee">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallCenterService/GetFreeEmloyee" message="tns:ICallCenterService_GetFreeEmloyee_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallCenterService/GetFreeEmloyeeResponse" message="tns:ICallCenterService_GetFreeEmloyee_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployes">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallCenterService/GetEmployes" message="tns:ICallCenterService_GetEmployes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallCenterService/GetEmployesResponse" message="tns:ICallCenterService_GetEmployes_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ICallCenterService" type="tns:ICallCenterService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/ICallCenterService/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateState">
+      <soap:operation soapAction="http://tempuri.org/ICallCenterService/UpdateState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFreeEmloyee">
+      <soap:operation soapAction="http://tempuri.org/ICallCenterService/GetFreeEmloyee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployes">
+      <soap:operation soapAction="http://tempuri.org/ICallCenterService/GetEmployes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CallCenterService">
+    <wsdl:port name="BasicHttpBinding_ICallCenterService" binding="tns:BasicHttpBinding_ICallCenterService">
+      <soap:address location="http://localhost/TFrameWorkCallCenterServer/CallCenterService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

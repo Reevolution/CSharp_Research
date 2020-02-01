@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="TFrameWork.CallCenter.WCF.Service.CallCenterService" Factory="TFrameWork.CallCenter.WCF.Service.CallCenterFactory" %>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6a900075-8e56-4869-8c0d-f306bab0100e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/TFrameWorkCallCenterServer/CallCenterService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CallCenterService.xsd" MetadataType="Schema" ID="494069a5-c186-482d-bd60-e75b0f291385" SourceId="1" SourceUrl="http://localhost/TFrameWorkCallCenterServer/CallCenterService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CallCenterService1.xsd" MetadataType="Schema" ID="a360f5f5-57d1-48c6-9959-bf06bb312b3d" SourceId="1" SourceUrl="http://localhost/TFrameWorkCallCenterServer/CallCenterService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CallCenterService2.xsd" MetadataType="Schema" ID="824425fa-63d3-48e1-9c50-62d1e01e92be" SourceId="1" SourceUrl="http://localhost/TFrameWorkCallCenterServer/CallCenterService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CallCenterService3.xsd" MetadataType="Schema" ID="78318aa5-0bd3-4bef-9848-462c83a0aef8" SourceId="1" SourceUrl="http://localhost/TFrameWorkCallCenterServer/CallCenterService.svc?xsd=xsd3" />
+    <MetadataFile FileName="CallCenterService.disco" MetadataType="Disco" ID="78972878-e641-42bd-955e-1075bfcc6a44" SourceId="1" SourceUrl="http://localhost/TFrameWorkCallCenterServer/CallCenterService.svc?disco" />
+    <MetadataFile FileName="CallCenterService.wsdl" MetadataType="Wsdl" ID="045062c6-6f70-4506-9923-80539a2daadd" SourceId="1" SourceUrl="http://localhost/TFrameWorkCallCenterServer/CallCenterService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
